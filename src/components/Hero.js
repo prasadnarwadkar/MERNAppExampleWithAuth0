@@ -4,7 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 import Axios from "axios";
 
-const apiUri = process.env.REACT_API_HOST || "http://localhost:3002/api/observations";
+const apiUri = process.env.REACT_APP_HOST;
+console.log('API uri is: ' + apiUri);
 
 function Hero() {
   
