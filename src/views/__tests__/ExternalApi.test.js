@@ -42,10 +42,11 @@ describe("The ExternalApi component", () => {
     fireEvent.click(screen.getByText("Ping API"));
 
     await waitFor(() => screen.getByTestId("api-result"));
+    const resultElement = screen.getByTestId("api-result");
 
     expect(
-      await screen.findByText(/This is the API result/)
-    ).toBeInTheDocument();
+      resultElement.textContent
+    ).toContain("This is the API result");
   });
 
   it("shows the warning content when there is no audience", async () => {

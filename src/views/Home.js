@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { Alert } from "reactstrap";
-import Hero from "../components/Hero";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import Loading from "../components/Loading";
 import { getConfig } from "../config";
@@ -87,7 +86,7 @@ const Home = () => {
         )}
       </div>
       <Fragment>
-        <Hero />
+        <p>This is the home page.</p>
         <hr />
         {/* <Content /> */}
       </Fragment>

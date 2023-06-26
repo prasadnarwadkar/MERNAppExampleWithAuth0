@@ -125,9 +125,10 @@ export const ExternalApiComponent = () => {
           using the API's audience value.
         </p>
 
+        <div data-testid='noApiCallPossibleWarning'>
         {!audience && (
           <Alert color="warning">
-            <p>
+            <p data-testid="noApiCallPossibleWarning">
               You can't call the API at the moment because your application does
               not have any configuration for <code>audience</code>, or it is
               using the default value of <code>YOUR_API_IDENTIFIER</code>. You
@@ -170,6 +171,7 @@ export const ExternalApiComponent = () => {
             </p>
           </Alert>
         )}
+        </div>
 
         <Button
           color="primary"

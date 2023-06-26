@@ -4,6 +4,7 @@ import { Container } from "reactstrap";
 
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
@@ -37,6 +38,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
+            <Route path="/observations" component={Hero} />
             <Route path="/external-api" component={ExternalApi} />
           </Switch>
         </Container>

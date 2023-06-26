@@ -153,7 +153,7 @@ function Hero() {
                 <th>Codings</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody data-testid="obs-tbody">
               {data.map((listValue) => {
                 if (listValue.codings.length > 0) {
                   return (

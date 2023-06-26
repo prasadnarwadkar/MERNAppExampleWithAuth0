@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Home from "../Home";
+import Hero from "../../components/Hero";
+import { render } from "@testing-library/react";
 
 it("renders", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Home />, div);
+  render(<Home />);
 });
