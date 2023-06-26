@@ -70,6 +70,8 @@ It looks like the following screenshot after you log in using your `Auth0` domai
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+**Please don't forget to check out the Jest tests which test the main components of the application.**
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
